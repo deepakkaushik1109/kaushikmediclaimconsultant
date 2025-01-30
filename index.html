@@ -1,0 +1,943 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>KAUSHIK MEDICLAIM CONSULTANT</title>
+    <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    
+	
+	    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+	
+	  <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+	  <!--font nature and size and not colour colour-->
+  
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+  
+    <link rel="stylesheet" href="css/animate.css">
+	<!--contact me, about me and deepak advisor-->
+  
+      <link rel="stylesheet" href="css/owl.carousel.min.css">
+	  <!--all dots removed-->
+  
+      <link rel="stylesheet" href="css/owl.theme.default.min.css">
+  
+    <link rel="stylesheet" href="css/magnific-popup.css">
+  
+    <link rel="stylesheet" href="css/aos.css">
+  
+      <link rel="stylesheet" href="css/ionicons.min.css">
+  
+   <link rel="stylesheet" href="css/flaticon.css">
+  
+     <link rel="stylesheet" href="css/icomoon.css">
+   
+   <link rel="stylesheet" href="css/style.css">
+   <!--for body-->
+
+
+
+		<style>
+		/*  for the wrapping of the  text in the home section  */
+		  /* Ensure the text wraps and adjusts based on screen width */
+		  h2, h1 {
+			margin: 0;
+			word-wrap: break-word;
+		  }
+
+		  /* Make adjustments for smaller screens */
+		  @media screen and (max-width: 768px) {
+			h2 {
+			  font-size: 36px; /* Adjust font size for smaller screens */
+			}
+			h1 {
+			  font-size: 30px; /* Adjust font size for smaller screens */
+			}
+		  }
+
+		  /* Further adjustments for very small screens (like mobile phones) */
+		  @media screen and (max-width: 480px) {
+			h2 {
+			  font-size: 30px; /* Further reduce font size for small screens */
+			}
+			h1 {
+			  font-size: 24px; /* Further reduce font size for small screens */
+			}
+		  }
+		</style>
+
+			<style>
+	/*  for the sepertation  of the  text in the services and consultation section  */
+			.skill-mf {
+				padding: 10px;
+			}
+
+			.skill-point {
+				display: block;
+				font-size: 16px;
+				font-weight: 600;
+				margin-bottom: 10px; /* Adjust spacing between points */
+			}
+
+			.separator {
+				border-bottom: 2px solid black;
+				margin: 5px 0; /* Adjust the space between the line and text */
+			}
+
+			</style>
+
+
+
+
+
+
+		   <style
+		   	/*  for the navbar at the top in the home section  */
+							.navbar-brand {
+					  font-size: 18px; /* Adjust font size */
+					  font-weight: bold; /* Make the text bold */
+					  white-space: normal; /* Allow wrapping of text */
+					  line-height: 1.2; /* Adjust line height for better readability */
+					  text-align: center; /* Center the brand text */
+					  color: #fff; /* White text for visibility */
+					}
+
+					.navbar-nav .nav-item .nav-link span {
+					  font-size: 16px; /* Adjust font size for menu items */
+					  font-weight: normal; /* Normal font weight for links */
+					  color: #fff; /* Menu link color */
+					  transition: color 0.3s ease; /* Smooth transition for hover effect */
+					}
+
+					.navbar-nav .nav-item .nav-link span:hover {
+					  color: #f8d210; /* Highlight color on hover */
+					}
+
+					.navbar-toggler {
+					  border: none; /* Remove the border around the toggle button */
+					}
+
+					.navbar-toggler .oi {
+					  font-size: 20px; /* Adjust icon size */
+					  color: #fff; /* Icon color */
+					}
+
+					/* Mobile Adjustments */
+					@media screen and (max-width: 768px) {
+					  .navbar-brand {
+						font-size: 16px; /* Slightly smaller brand text on mobile */
+					  }
+
+					  .navbar-nav {
+						text-align: center; /* Center align menu items */
+					  }
+					}
+
+		   
+		   </style>
+
+		 
+ <style>
+    
+				
+				#save {
+			  position: sticky;
+			  bottom: 0;
+			  width: 100%;
+			  background-color: #fff;
+			  z-index: 10;
+			}
+
+			.chatbot-container {
+			  width: 350px; /* Fixed width for desktops */
+			  max-width: 100%; /* Ensures it adjusts on smaller screens */
+			  background:white;
+			  border-radius: 10px;
+			  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+			  position: fixed;
+			  bottom: 80px;
+			  right: 20px; /* Proper padding from the right edge */
+			  z-index: 10000;
+			  height: 80vh;
+			  display: flex;
+			  flex-direction: column;
+			  overflow: hidden;
+			  padding: none; /* Add padding inside the chatbot */
+			  box-sizing: border-box; /* Include padding in total width */
+			  border: double;
+              border-color: lightgrey;
+			  border-width: thin;
+	   
+   
+  
+    
+			
+			}
+
+				.chat-header {
+				  background: #4a90e2;
+				  color: white;
+				  text-align: center;
+				  padding: 10px;
+				  font-size: 18px;
+				  font-weight: bold;
+				  position: relative;
+				}
+
+				.chat-header .minimize-btn {
+				  position: absolute;
+				  top: 5px;
+				  right: 10px;
+				  background: transparent;
+				  border: none;
+				  color: white;
+				  font-size: 18px;
+				  cursor: pointer;
+				}
+
+				.chat-body {
+				  height: 100%;
+				  overflow-y: auto;
+				  padding: 10px;
+				  background: white;
+				  border-top: 1px solid #ddd;
+				  border-bottom: 1px solid #ddd;
+				  display: flex;
+				  flex-direction: column;
+				  flex-grow: 1;
+				  overflow-y: auto;
+				  margin-bottom: 10px;
+				}
+
+				.chat-body .bot-message,
+				.chat-body .user-message {
+				  margin-bottom: 10px;
+				  padding: 12px;
+				  border-radius: 20px;
+				  max-width: 70%;
+				  word-wrap: break-word;
+				  display: inline-block;
+				}
+
+				.bot-message {
+		        background: whitesmoke;
+               color: #000000;
+				  align-self: flex-start;
+				}
+
+				.user-message {
+				      background: #36af51;
+                     color: white;
+				  align-self: flex-end;
+				}
+
+				.chat-footer {
+				  padding: 10px;
+				  background: white;
+				  border-top: 1px solid #ddd;
+				  flex-shrink: 0;
+				  position: sticky;
+				  bottom: 0;
+				  background-color: white;
+				  z-index: 10;
+				
+				}
+
+				.response-options {
+				  margin-top: 10px;
+				  display: flex;
+				  flex-wrap: wrap;
+				  gap: 10px;
+				  justify-content: center;
+				  overflow-y: auto;
+				  max-height: 100px;
+				}
+
+				.response-options button {
+				  background: #4a90e2;
+				  color: white;
+				  border: none;
+				  padding: 8px 15px;
+				  border-radius: 10px;
+				  cursor: pointer;
+				  font-size: 14px;
+				  transition: background 0.3s, transform 0.2s;
+				  white-space: nowrap;
+				}
+
+				.response-options button:hover {
+				  background: #3b7fc4;
+				  transform: scale(1.05);
+				}
+
+				.input-container {
+				  flex: 1;
+				  display: flex;
+				  flex-direction: column;
+				  justify-content: flex-start;
+				  gap: 10px;
+				}
+
+				.input-container input {
+				  padding: 12px;
+				  width: 100%;
+				  border-radius: 5px;
+				  border: 1px solid #ddd;
+				  font-size: 16px;
+				  margin-bottom: 10px;
+				  transition: border-color 0.3s;
+				  background: white;
+				}
+
+				.input-container input:focus {
+				  border-color: #4a90e2;
+				  outline: none;
+				}
+
+				.input-container button {
+				  padding: 12px;
+				  width: 100%;
+				  border-radius: 5px;
+				  background: #4a90e2;
+				  color: white;
+				  font-size: 16px;
+				  border: none;
+				  cursor: pointer;
+				  transition: background 0.3s;
+				}
+
+				.input-container button:hover {
+				  background: #3b7fc4;
+				}
+
+				.save-button {
+				  background: #28a745;
+				  color: white;
+				  border: none;
+				  padding: 12px;
+				  border-radius: 5px;
+				  cursor: pointer;
+				  margin-top: 10px;
+				  width: 100%;
+				  font-size: 16px;
+			   
+				}
+
+				.save-button:hover {
+				  background: #218838;
+				}
+
+				.thank-you-message {
+				  font-size: 16px;
+				  color: #4a90e2;
+				  font-weight: bold;
+				  text-align: center;
+				  margin-top: 20px;
+				  display: none;
+				}
+
+				.chat-logo {
+				  cursor: pointer;
+				  width: 80px;
+				  height: 80px;
+				  background-color: #4a90e2;
+				  border-radius: 50%;
+				  color: white;
+				  font-size: 16px;
+				  display: flex;
+				  justify-content: center;
+				  align-items: center;
+				  font-weight: bold;
+				  text-transform: uppercase;
+				  position: fixed;
+				  bottom: 20px;
+				  right: 20px;
+				  z-index: 9999;
+				  transition: all 0.3s ease;
+				}
+
+				.chat-logo span {
+				  display: inline-flex;
+				  justify-content: center;
+				  align-items: center;
+				  font-size: 16px;
+				  text-align: center;
+				  line-height: 1.1;
+				}
+
+				.chat-logo:hover {
+				  background-color: #3b7fc4;
+				}
+
+			@media screen and (max-width: 480px) {
+			  .chatbot-container {
+				height: 80%; /* Adjust height for small screens */
+				width: calc(100% - 20px); /* Full width minus padding from the right */
+				max-width: 100%;
+				bottom: 90px;
+				right: 10px; /* Padding from the right side */
+				padding: 10px; /* Padding inside the chatbot */
+				box-sizing: border-box; /* Ensure padding doesn’t overflow width */
+			  }
+			}
+
+
+				  .response-options {
+					flex-direction: column;
+					gap: 8px;
+				  }
+
+				  .response-options button {
+					font-size: 12px;
+					padding: 8px 12px;
+				  }
+
+				  .input-container input,
+				  .input-container button {
+					font-size: 14px;
+				  }
+
+				  .save-button {
+					font-size: 14px;
+					padding: 10px;
+				  }
+
+				  .chat-logo {
+			  width: 80px;
+			  height: 80px;
+			  background-color: #4a90e2;
+			  border-radius: 50%;
+			  color: white;
+			  font-size: 16px;
+			  display: flex;
+			  justify-content: center;
+			  align-items: center;
+			  font-weight: bold;
+			  text-transform: uppercase;
+			  position: fixed;
+			  bottom: 20px;
+			  right: 20px;
+			  z-index: 9999;
+			  transition: all 0.3s ease;
+			}
+				}
+
+				@media screen and (max-height: 600px) {
+				  .chatbot-container {
+					height: 400px;
+				  }
+				}
+			  </style>
+			  
+			  
+			 
+			  
+			  
+			  
+			  
+			  
+			  
+			  <style>
+			  
+			  	/*  for the setting the padding from all sides accross the chatbox container */
+			  @media (max-width: 767px) {
+				#about-section {
+					padding-left: 20px; /* Add padding on the left */
+					padding-right: 20px; /* Add padding on the right */
+					padding-top: 20px;  /* Add padding on top */
+					padding-bottom: 20px; /* Add padding at the bottom */
+				}
+			}
+			
+			
+			
+
+           </style>
+
+		
+
+
+    <style >
+	
+		/*  for thinnning the vertical scroll bar in the chatbox and also its colour   */
+
+		.chat-body {
+			
+			overflow-y: auto;
+			scrollbar-width: thin; /* Works for Firefox */
+			scrollbar-color: light-grey dark-grey; /* Scroll thumb & track color */
+		}
+
+		/* For Webkit Browsers (Chrome, Edge, Safari) */
+		.chat-body::-webkit-scrollbar {
+			width: 4px; /* Reduce scrollbar width */
+		}
+
+		.chat-body::-webkit-scrollbar-thumb {
+			background-color: light-grey; /* Scroll thumb color */
+			border-radius: 10px;
+		}
+
+		.chat-body::-webkit-scrollbar-track {
+			background-color: dark-grey; /* Scroll track color */
+		}
+
+		/* For Internet Explorer & Microsoft Edge */
+		.chat-body {
+			-ms-overflow-style: none; /* Hide default scrollbar */
+		}
+
+		.chat-body::-ms-scrollbar {
+			width: 4px; /* Decrease scrollbar width */
+		}
+
+    </style>
+
+
+     <style>
+	 .input-container {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0; /* Remove padding to prevent extra space */
+    margin: 0; /* Ensure no margin on the container */
+}
+
+#chatInput {
+    width: 100%;
+    padding: 12px 50px 12px 15px; /* Adjust padding for the icon */
+    border: 1px solid #ccc;
+    border-radius: none;
+    font-size: 16px;
+    outline: none;
+    flex-grow: 1; /* Ensures it expands fully */
+    box-sizing: border-box; /* Prevents overflow */
+}
+
+.send-icon {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #007bff;
+    font-size: 24px; /* Bigger icon */
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 600px) {
+    .chat-footer {
+        width: 100%;
+        padding: 0; /* Remove any padding */
+    }
+
+    #chatInput {
+        font-size: 14px;
+        padding: 10px 45px 10px 12px; /* Adjust for mobile */
+		
+    }
+
+    .send-icon {
+        font-size: 22px;
+        right: 10px;
+    }
+}
+
+	 
+	 </style >
+
+
+  </head>
+  
+  
+  
+  
+  
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+	 
+  <!-- Notification Bar -->
+ <!-- <div id="notification-bar">
+    <span>Download our app for a better experience!</span>
+    <button id="download-btn">Download</button>
+    <button id="close-btn">&times;</button>
+	</div> -->
+	<!-- Close button -->
+ 
+
+
+  <script>
+    // Display the notification bar when the page loads
+    window.onload = function() {
+      const notificationBar = document.getElementById('notification-bar');
+      const downloadButton = document.getElementById('download-btn');
+      const closeButton = document.getElementById('close-btn');
+
+      // Slide down the notification bar
+      notificationBar.style.top = '0px';
+
+      // Add click event listener for the "Download" button
+      downloadButton.addEventListener('click', function () {
+        const apkUrl = 'downloads/app-debug.apk';  // Path to APK file on your server
+
+        // Trigger the APK download
+        const anchor = document.createElement('a');
+        anchor.href = apkUrl;
+        anchor.download = 'app-debug.apk'; // Optional: set a custom file name
+        document.body.appendChild(anchor);
+        anchor.click();
+        document.body.removeChild(anchor);
+      });
+
+      // Add click event listener for the "Close" button
+      closeButton.addEventListener('click', function () {
+        notificationBar.style.top = '-100px'; // Slide the notification bar up (hide it)
+      });
+    };
+  </script>
+
+
+	  
+ <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
+  <div class="container">
+    <!-- Brand Name -->
+    <p class="navbar-brand text-wrap text-center">KAUSHIK MEDICLAIM CONSULTANTS</p>
+    <!-- Navbar Toggle Button -->
+    <button
+      class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle"
+      type="button"
+      data-toggle="collapse"
+      data-target="#ftco-nav"
+      aria-controls="ftco-nav"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="oi oi-menu"></span> Menu
+    </button>
+
+    <!-- Collapsible Menu -->
+    <div class="collapse navbar-collapse" id="ftco-nav">
+      <ul class="navbar-nav nav ml-auto">
+        <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
+        <li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
+        <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+	   
+	
+	
+    <section class="ftco-about img ftco-section ftco-no-pb" id="home-section">
+    	<div class="container">
+			<div class="row">
+				<div class="row d-flex align-items-stretch">
+				
+				
+					<div class="col-md-6 col-lg-7 pl-lg-5 pb-5">
+						<div class="row justify-content-start pb-3">
+							<div class="col-md-12 heading-section ftco-animate">
+								
+								<div style="display: flex; flex-wrap: wrap; padding-left: 40px; padding-right: 40px;">
+  <h2 style="font-size: 56px; font-weight: bold; color: black; margin-right: 20px;">Deepak Kaushik</h2>
+  <h1 style="font-size: 40px; color: black;">Health Insurance Advisor</h1>
+</div>
+
+								
+				
+							</div>
+						</div>
+					
+				</div>
+	</section>
+	
+	
+
+
+
+    <section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
+    	<div class="container">
+			<div class="row">
+				<div class="row d-flex align-items-stretch">
+				
+				
+					<div class="col-md-6 col-lg-7 pl-lg-5 pb-5">
+						<div class="row justify-content-start pb-3">
+							<div class="col-md-12 heading-section ftco-animate">
+								
+								<h1 class="big">About</h1>
+								<h2 class="mb-4">About Me</h2>
+								
+								
+								<p>
+									With a a post-graduation diploma in 
+									Advanced Computing and  Bachelor's degree in Electrical Engineering, I am a fresh graduate eager to embark on a career in the field of 
+									technology. Proficient in testing methodologies, I possess a solid foundation in 
+									engineering principles and advanced computing concepts. Excited to apply my skills and 
+									knowledge to contribute effectively to impactful projects and further develop my 
+									expertise in testing and software quality assurance.
+								</p>
+								
+							</div>
+						</div>
+					
+				</div>
+				
+				
+				
+				<!-- <div class="row d-flex"> -->
+					<div class="col-md-6 col-lg-5 d-flex">
+						<div class="img-about img d-flex align-items-stretch">
+							<div class="overlay">
+							
+								<div class="skill-mf">
+								 <span>
+								    <p class="title-s" style="font-weight: 700; font-size: 22px;">SERVICES/CONSULTATION</p>
+
+                                  </span>
+								
+										<span class="skill-point">Purchase Of New Health Insurance Policy</span>
+										<div class="separator"></div>
+
+										<span class="skill-point">Group Mediclaim Policy</span>
+										<div class="separator"></div>
+
+										<span class="skill-point">Portability</span>
+										<div class="separator"></div>
+
+										<span class="skill-point">Fast Claim Reimbursement</span>
+										<div class="separator"></div>
+
+										<span class="skill-point">Information Regarding Cashless Treatment</span>
+										<div class="separator"></div>
+
+										<span class="skill-point">Consultation Regarding Denial Claims</span>
+										<div class="separator"></div>
+
+										<span class="skill-point">Strangled Payments</span>
+										<div class="separator"></div>
+
+										<span class="skill-point">Senior Citizen Health Insurance Policy</span>
+										<div class="separator"></div>
+
+										<span class="skill-point">Term Insurance Consultation</span>
+										<div class="separator"></div>
+									</div>
+
+								
+							</div>
+						</div>
+					</div>
+					
+					
+				
+				
+				
+				
+			</div>
+		</div>
+		
+		
+		
+		
+    </section>
+
+
+
+	
+  
+
+
+
+
+    <section class="ftco-section contact-section ftco-no-pb" id="contact-section">
+      <div class="container">
+      	<div class="row justify-content-center mb-5 pb-3">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <h1 class="big big-2">Contact</h1>
+            <h2 class="mb-4">Contact Me</h2>
+            <p>Below are the details to reach out to me!</p>
+          </div>
+        </div>
+
+        <div class="row d-flex contact-info mb-5">
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-map-signs"></span>
+          		</div>
+          		<h3 class="mb-4">Address</h3>
+	            <!--<p>Bengaluru, India</p>-->
+				<p>Greater Noida, Uttar Pradesh, India</p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-phone2"></span>
+          		</div>
+          		<h3 class="mb-4">Contact Number</h3>
+	             <p><a href="tel://+919811606054" style="color:black;">+91-9811606054</a></p>
+				 
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-paper-plane"></span>
+          		</div>
+          		<h3 class="mb-4">Email Address</h3>
+	           <!-- <p><a href="mailto:info@yoursite.com">conctact@domainname.com</a></p>-->
+				 <a href="mailto:deepakkaushik1888@gmail.com" style="color:black;">deepakkaushik1888@gmail.com</a>
+	          </div>
+          </div>
+         
+   </div>
+ </section>
+
+
+ 
+	
+    <footer class="ftco-footer ftco-section">
+		<div class="container">
+		  <div class="row">
+			<div class="col-md-12 text-center">
+  
+			  <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+	Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart color-danger" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+	<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+			</div>
+		  </div>
+		</div>
+	  </footer>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery-migrate-3.0.1.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.easing.1.3.js"></script>
+<script src="js/jquery.waypoints.min.js"></script>
+<script src="js/jquery.stellar.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/jquery.magnific-popup.min.js"></script>
+<script src="js/aos.js"></script>
+<script src="js/jquery.animateNumber.min.js"></script>
+<script src="js/scrollax.min.js"></script>
+
+<script src="js/main.js"></script>
+<!-- Chatbot HTML structure -->
+<!-- Chatbot UI -->
+<div class="chat-logo" id="chatButton"><i class="fas fa-comment-alt"></i></div>
+<div class="chatbot-container" id="chatbotContainer">
+    <div class="chat-header">
+        Querybox
+        <button class="minimize-btn" id="minimizeButton">X</button>
+    </div>
+    <div class="chat-body" id="chatBody"></div>
+    <div class="chat-footer" id="chatFooter">
+        <div class="input-container">
+            <input type="text" id="chatInput" placeholder="Type a message...">
+            <i class="fas fa-paper-plane send-icon" id="sendMessage"></i>
+        </div>
+    </div>
+</div>
+
+<!-- Firebase and Chatbot Logic -->
+<script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/11.1.0/firebase-app.js";
+    import { getFirestore, collection, addDoc } from "https://www.gstatic.com/firebasejs/11.1.0/firebase-firestore.js";
+
+    const firebaseConfig = {
+        apiKey: "AIzaSyDZDT2eCJgfcRzyT5f5Z5BfRPI9lzk4-94",
+        authDomain: "kaushik-mediclaim-consul-b21ea.firebaseapp.com",
+        projectId: "kaushik-mediclaim-consul-b21ea",
+        storageBucket: "kaushik-mediclaim-consul-b21ea",
+        messagingSenderId: "1029687675605",
+        appId: "1:1029687675605:web:5a9597403b80b706ca705c",
+    };
+
+    const app = initializeApp(firebaseConfig);
+    const db = getFirestore(app);
+
+    const chatButton = document.getElementById('chatButton');
+    const chatbotContainer = document.getElementById('chatbotContainer');
+    const chatBody = document.getElementById('chatBody');
+    const chatInput = document.getElementById('chatInput');
+    const sendMessage = document.getElementById('sendMessage');
+    const minimizeButton = document.getElementById('minimizeButton');
+    const chatFooter = document.getElementById('chatFooter');
+
+    let chatHistory = [];
+    let userName = "";
+    let userMobile = "";
+    let chatStep = 0;
+
+    function addMessage(message, isUser) {
+        const messageElement = document.createElement('div');
+        messageElement.textContent = message;
+        messageElement.className = isUser ? 'user-message' : 'bot-message';
+        chatBody.appendChild(messageElement);
+        chatBody.scrollTop = chatBody.scrollHeight;
+        chatHistory.push((isUser ? 'User: ' : 'Bot: ') + message);
+    }
+
+    function handleSendMessage() {
+        const message = chatInput.value.trim();
+        if (!message) {
+            alert("Please enter a message before sending.");
+            return;
+        }
+
+        addMessage(message, true);
+        chatInput.value = "";
+
+        if (chatStep === 0) {
+            userName = message;
+            addMessage(`Hi ${userName}!`, false);
+            setTimeout(() => addMessage("Please enter your mobile number.", false), 1000);
+            chatStep++;
+        } else if (chatStep === 1) {
+            userMobile = message;
+            addMessage("How can I assist you regarding our service?", false);
+            chatStep++;
+        } else if (chatStep === 2) {
+            setTimeout(() => {
+                addMessage("Thank you! Have a great day! We'll get back to you soon.", false);
+                saveChatHistory();
+                chatFooter.style.display = 'none';
+            }, 1000);
+            chatStep++;
+        }
+    }
+
+    async function saveChatHistory() {
+        try {
+            await addDoc(collection(db, "chatHistories"), {
+                name: userName,
+                mobile: userMobile,
+                chatHistory: chatHistory.join('\n'),
+                date: new Date().toLocaleString()
+            });
+        } catch (error) {
+            console.error("Error saving chat:", error);
+            addMessage("Failed to save chat history.", false);
+        }
+    }
+
+    chatButton.onclick = () => chatbotContainer.style.display = chatbotContainer.style.display === "none" ? "block" : "none";
+    minimizeButton.onclick = () => chatbotContainer.style.display = 'none';
+    sendMessage.onclick = handleSendMessage;
+    chatInput.addEventListener("keypress", function(event) {
+        if (event.key === "Enter") handleSendMessage();
+    });
+
+    addMessage("Hello! What's your name?", false);
+</script>
+
+
+
+</body>
+
+</html>
