@@ -159,7 +159,7 @@
 			  right: 20px; /* Proper padding from the right edge */
 			  z-index: 10000;
 			  height: 80vh;
-			  display: flex;
+			  display: none;
 			  flex-direction: column;
 			  overflow: hidden;
 			  padding: none; /* Add padding inside the chatbot */
@@ -812,7 +812,8 @@
           			<span class="icon-phone2"></span>
           		</div>
           		<h3 class="mb-4">Contact Number</h3>
-	             <p><a href="tel://+919315752271" style="color:black;">+91-919315752271</a></p>
+	             <p><a href="tel://+919315752271" style="color:black;">+91-919315752271</a></br>
+				    <a href="tel://+919811606054" style="color:black;">+91-9811606054</a></p>
 				 
 	          </div>
           </div>
@@ -959,7 +960,13 @@
         }
     }
 
-    chatButton.onclick = () => chatbotContainer.style.display = chatbotContainer.style.display === "none" ? "block" : "none";
+   let isOpen = false;
+
+		chatButton.onclick = () => {
+			isOpen = !isOpen;  
+			chatbotContainer.style.display = isOpen ? "flex" : "none";
+		};
+
     minimizeButton.onclick = () => chatbotContainer.style.display = 'none';
     sendMessage.onclick = handleSendMessage;
     chatInput.addEventListener("keypress", function(event) {
